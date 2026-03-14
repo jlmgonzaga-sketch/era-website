@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#DFBD69"/><stop offset="100%" stop-color="#926F34"/>
+  </linearGradient></defs>
+  <rect width="192" height="192" fill="#000"/>
+  <text x="96" y="96" font-family="Georgia,serif" font-size="80" font-weight="bold"
+        fill="url(#g)" text-anchor="middle" dominant-baseline="central">Era</text>
+</svg>

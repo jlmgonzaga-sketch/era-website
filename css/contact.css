@@ -1,0 +1,43 @@
+/* CONTACT PAGE */
+.page-hero-sub { font-size:0.9rem; font-weight:300; line-height:1.8; color:var(--text-muted); max-width:520px; margin-top:12px; }
+.body-text { font-size:0.88rem; font-weight:300; line-height:1.9; color:var(--text-muted); margin-bottom:14px; }
+.contact-grid { display:flex; flex-direction:column; gap:56px; }
+.contact-channels { display:flex; flex-direction:column; gap:0; }
+.cc-item { display:flex; align-items:flex-start; gap:16px; padding:18px 0; border-bottom:1px solid var(--border-dark); }
+.cc-icon { font-size:1rem; flex-shrink:0; width:28px; text-align:center; margin-top:2px; }
+.cc-label { font-size:0.58rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:4px; }
+.cc-content a, .cc-content span { font-size:0.85rem; font-weight:400; color:rgba(255,255,255,0.65); text-decoration:none; display:block; }
+.cc-content a:hover { color:var(--gold); }
+.contact-divider { height:1px; background:var(--border); margin:32px 0; }
+.contact-tagline { font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-style:italic; }
+.cf-title { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:600; margin-bottom:28px; }
+.era-form { display:flex; flex-direction:column; gap:16px; }
+.form-row { display:grid; grid-template-columns:1fr; gap:16px; }
+.form-field { display:flex; flex-direction:column; gap:6px; }
+.form-field label { font-size:0.62rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); }
+.form-field input, .form-field select, .form-field textarea {
+  background:var(--charcoal2); border:1px solid var(--border); color:var(--white);
+  padding:13px 16px; font-family:'Montserrat',sans-serif; font-size:0.83rem; font-weight:300;
+  outline:none; transition:border-color 0.2s; width:100%; resize:vertical;
+}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus { border-color:var(--gold); }
+.form-field input::placeholder,.form-field textarea::placeholder { color:var(--text-dim); }
+.form-field select option { background:var(--charcoal2); }
+.form-note { font-size:0.68rem; color:var(--text-dim); text-align:center; margin-top:4px; }
+.email-accounts-grid { display:grid; grid-template-columns:1fr; gap:1px; background:var(--border); border:1px solid var(--border); }
+.ea-card { background:var(--charcoal2); padding:24px 28px; display:flex; flex-direction:column; gap:6px; transition:background 0.2s; }
+.ea-card:hover { background:rgba(35,31,32,0.5); }
+.ea-email a { font-size:0.88rem; font-weight:500; color:var(--gold); text-decoration:none; }
+.ea-purpose { font-size:0.76rem; color:var(--text-muted); font-weight:300; }
+.ea-type { font-size:0.58rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.3); }
+.ea-shared { color:var(--gold); opacity:0.6; }
+@media(min-width:768px) {
+  .contact-grid { flex-direction:row; gap:80px; }
+  .contact-info { flex:1; }
+  .contact-form-wrap { flex:1.2; }
+  .form-row { grid-template-columns:1fr 1fr; }
+  .email-accounts-grid { grid-template-columns:repeat(3,1fr); }
+}
+@media(min-width:1024px) {
+  .email-accounts-grid { grid-template-columns:repeat(5,1fr); }
+}

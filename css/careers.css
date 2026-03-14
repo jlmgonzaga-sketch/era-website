@@ -1,0 +1,44 @@
+/* CAREERS PAGE */
+.page-hero-sub { font-size:0.9rem; font-weight:300; line-height:1.8; color:var(--text-muted); max-width:520px; margin-top:12px; }
+.body-text { font-size:0.88rem; font-weight:300; line-height:1.9; color:var(--text-muted); margin-bottom:14px; }
+.careers-intro { margin-bottom:48px; }
+.careers-benefits { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--border); border:1px solid var(--border); margin-top:0; }
+.car-benefit { background:var(--black); padding:32px 24px; }
+.car-b-icon { color:var(--gold); font-size:0.8rem; margin-bottom:12px; }
+.car-benefit h4 { font-size:0.82rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px; }
+.car-benefit p { font-size:0.8rem; font-weight:300; line-height:1.75; color:var(--text-muted); }
+.placements-list { border:1px solid var(--border); }
+.placement-row { display:flex; flex-direction:column; padding:18px 20px; border-bottom:1px solid var(--border-dark); gap:4px; transition:background 0.2s; }
+.placement-row:last-child { border-bottom:none; }
+.placement-row:hover { background:rgba(223,189,105,0.04); }
+.pl-role { font-size:0.82rem; font-weight:600; color:var(--white); }
+.pl-sector { font-size:0.76rem; font-weight:300; color:var(--text-muted); }
+.submit-profile-grid { display:flex; flex-direction:column; gap:48px; }
+.submit-contact-alts { margin-top:32px; }
+.sca-title { font-size:0.6rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:16px; }
+.sca-item { display:flex; flex-direction:column; gap:2px; padding:14px 16px; border:1px solid var(--border); margin-bottom:8px; text-decoration:none; transition:border-color 0.2s; }
+.sca-item:hover { border-color:var(--gold); }
+.sca-icon { font-size:0.7rem; color:var(--gold); margin-bottom:4px; }
+.sca-item span:nth-child(2) { font-size:0.82rem; color:var(--white); font-weight:500; }
+.sca-label { font-size:0.64rem; color:var(--text-dim); }
+.era-form { display:flex; flex-direction:column; gap:16px; }
+.form-row { display:grid; grid-template-columns:1fr; gap:16px; }
+.form-field { display:flex; flex-direction:column; gap:6px; }
+.form-field label { font-size:0.62rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); }
+.form-field input, .form-field select, .form-field textarea {
+  background:var(--charcoal2); border:1px solid var(--border); color:var(--white);
+  padding:12px 16px; font-family:'Montserrat',sans-serif; font-size:0.82rem; font-weight:300;
+  outline:none; transition:border-color 0.2s; width:100%; resize:vertical;
+}
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color:var(--gold); }
+.form-field input::placeholder, .form-field textarea::placeholder { color:var(--text-dim); }
+.form-field select option { background:var(--charcoal2); }
+.form-note { font-size:0.68rem; color:var(--text-dim); text-align:center; margin-top:4px; }
+@media(min-width:768px) {
+  .careers-benefits { grid-template-columns:repeat(4,1fr); }
+  .placement-row { flex-direction:row; justify-content:space-between; align-items:center; }
+  .pl-sector { text-align:right; max-width:55%; }
+  .submit-profile-grid { flex-direction:row; gap:64px; }
+  .submit-info,.submit-form-wrap { flex:1; }
+  .form-row { grid-template-columns:1fr 1fr; }
+}

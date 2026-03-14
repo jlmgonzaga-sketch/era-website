@@ -1,0 +1,33 @@
+/* ABOUT PAGE */
+.page-hero-sub { font-size:0.9rem; font-weight:300; line-height:1.8; color:var(--text-muted); max-width:540px; margin-top:12px; }
+.about-philosophy { display:flex; flex-direction:column; gap:48px; }
+.body-text { font-size:0.88rem; font-weight:300; line-height:1.9; color:var(--text-muted); margin-bottom:14px; }
+.phil-quote-card { border:1px solid var(--border); padding:36px; margin-bottom:32px; position:relative; background:var(--charcoal2); }
+.pq-line { width:40px; height:2px; background:var(--gold-grad); margin-bottom:24px; }
+.pq-text { font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:500; font-style:italic; line-height:1.5; color:var(--white); margin-bottom:16px; }
+.pq-source { font-size:0.62rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); }
+.why-title { font-size:0.62rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:20px; }
+.why-item { display:flex; gap:14px; margin-bottom:16px; font-size:0.82rem; font-weight:300; line-height:1.7; color:var(--text-muted); }
+.why-item strong { color:var(--white); font-weight:600; }
+.why-dot { flex-shrink:0; width:6px; height:6px; border-radius:50%; background:var(--gold-grad); margin-top:7px; }
+.principles-grid { display:flex; flex-direction:column; gap:1px; background:var(--border); border:1px solid var(--border); }
+.principle-big { background:var(--charcoal2); padding:40px 32px; position:relative; }
+.pb-num { font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:600; opacity:0.25; display:block; margin-bottom:12px; }
+.pb-title { font-size:0.9rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:14px; }
+.pb-body { font-size:0.85rem; font-weight:300; line-height:1.85; color:var(--text-muted); }
+.exp-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--border); border:1px solid var(--border); }
+.exp-item { background:var(--black); padding:18px 16px; font-size:0.74rem; font-weight:600; color:rgba(255,255,255,0.42); border-left:2px solid transparent; transition:all 0.25s; }
+.exp-item:hover { background:var(--charcoal2); color:var(--white); border-left-color:var(--gold); padding-left:20px; }
+.cta-section { background:var(--charcoal2); border-top:1px solid var(--border); text-align:center; position:relative; overflow:hidden; }
+.cta-glow { position:absolute; inset:0; background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(146,111,52,0.1) 0%,transparent 70%); }
+.cta-content { position:relative; }
+.cta-title { font-family:'Cormorant Garamond',serif; font-size:clamp(2rem,7vw,3rem); font-weight:600; line-height:1.1; margin-bottom:18px; }
+.cta-body { font-size:0.86rem; font-weight:300; line-height:1.85; color:var(--text-muted); margin-bottom:36px; max-width:480px; margin-left:auto; margin-right:auto; }
+.cta-actions { display:flex; flex-direction:column; gap:12px; align-items:center; }
+@media(min-width:768px) {
+  .about-philosophy { flex-direction:row; align-items:flex-start; gap:64px; }
+  .phil-left,.phil-right { flex:1; }
+  .principles-grid { display:grid; grid-template-columns:repeat(3,1fr); }
+  .exp-grid { grid-template-columns:repeat(4,1fr); }
+  .cta-actions { flex-direction:row; justify-content:center; }
+}
